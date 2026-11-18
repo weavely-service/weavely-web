@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>つぐもの | つぐもの</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #f7f5f1;
+    --line: #e4e0d8;
+    --ink: #29241c;
+    --ink-soft: #5c5646;
+    --ink-faint: #918a76;
+    --seal: #0f7b8a;
+    --link: #0b5f6b;
+    --flag-bg: #eef7f8;
+    --flag-border: #a9d3d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1b1712;
+      --bg-soft: #241f18;
+      --line: #3a3327;
+      --ink: #f0ece2;
+      --ink-soft: #c9c0ac;
+      --ink-faint: #8f8672;
+      --seal: #f2c14e;
+      --link: #f2c14e;
+      --flag-bg: #16282b;
+      --flag-border: #2f5a60;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1b1712;
+    --bg-soft: #241f18;
+    --line: #3a3327;
+    --ink: #f0ece2;
+    --ink-soft: #c9c0ac;
+    --ink-faint: #8f8672;
+    --seal: #f2c14e;
+    --link: #f2c14e;
+    --flag-bg: #16282b;
+    --flag-border: #2f5a60;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+    line-height: 1.85;
+  }
+  a { color: var(--link); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  nav.site { border-bottom: 1px solid var(--line); padding: 18px 0; }
+  nav.site .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .brand { display: flex; align-items: center; gap: 8px; font-family: "Shippori Mincho", serif; font-weight: 700; font-size: 18px; text-decoration: none; color: var(--ink); }
+  .brand-icon {
+    width: 22px; height: 22px; border-radius: 6px; flex: none;
+    background: var(--seal); color: #eef7f8; display: flex; align-items: center; justify-content: center;
+    font-family: "Shippori Mincho", serif; font-weight: 700; font-size: 12px;
+  }
+  .navlinks { display: flex; gap: 18px; font-size: 13px; flex-wrap: wrap; }
+  .navlinks a { text-decoration: none; color: var(--ink-soft); }
+  .navlinks a.current { color: var(--seal); font-weight: 700; }
+  .navlinks a:hover { color: var(--link); }
+
+  main { padding: 48px 0 80px; }
+  h1 { font-family: "Shippori Mincho", serif; font-size: 26px; margin: 0 0 6px; }
+  .updated { font-size: 13px; color: var(--ink-faint); margin-bottom: 36px; }
+
+  .fillin {
+    background: var(--flag-bg); border: 1px solid var(--flag-border); border-radius: 6px;
+    padding: 14px 18px; font-size: 13px; color: var(--ink-soft); margin-bottom: 36px;
+  }
+  .fillin b { color: var(--ink); }
+
+  h2 {
+    font-family: "Shippori Mincho", serif; font-size: 18px; margin: 34px 0 12px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  h2:first-of-type { margin-top: 0; }
+  p { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 14px; }
+  ol, ul { margin: 0 0 14px; padding-left: 22px; }
+  li { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 13.5px; }
+  th, td { text-align: left; padding: 8px 10px; border: 1px solid var(--line); color: var(--ink-soft); vertical-align: top; }
+  th { background: var(--bg-soft); color: var(--ink); font-weight: 700; width: 30%; }
+  mark.fill { background: var(--flag-bg); color: var(--seal); padding: 0 4px; border-radius: 3px; font-weight: 700; }
+
+  footer.site { border-top: 1px solid var(--line); padding: 28px 0; }
+  footer.site .wrap { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+  footer.site .links { display: flex; gap: 18px; font-size: 13px; flex-wrap: wrap; }
+  footer.site .links a { text-decoration: none; color: var(--ink-soft); }
+  footer.site .copyright { font-size: 12.5px; color: var(--ink-faint); }
+  h3 { font-size: 15px; margin: 22px 0 6px; }
+  .updated { margin-bottom: 28px; }
+</style></head>
+<body>
+<nav class="site"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-icon">つ</span>つぐもの</a>
+<div class="navlinks"><a class="current" href="index.html">つぐもの</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a><a href="support.html">サポート</a><a href="account-deletion.html">アカウントと個人情報の削除</a></div></div></nav>
+<main class="wrap">
+<h1>つぐもの</h1>
+<div class="updated">最終更新日: 2026年11月18日</div>
+<p>「つぐもの」は、ひとつの物語を、みんなでページ単位で書き継いでいくアプリです。誰かが書いた1ページ目に続きを書き足したり、続きの候補から読む道を選んだりして、物語はいくつもの結末へ枝分かれしていきます。</p><p>現在、公開に向けて準備中です。</p><ul><li><a href="terms.html">利用規約</a></li><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="support.html">サポート</a></li><li><a href="account-deletion.html">アカウントと個人情報の削除</a></li></ul></main>
+<footer class="site"><div class="wrap"><div class="links"><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a><a href="support.html">サポート</a><a href="account-deletion.html">アカウントと個人情報の削除</a></div>
+<div class="copyright">&copy; 2026 合同会社粋人舎</div></div></footer>
+</body></html>

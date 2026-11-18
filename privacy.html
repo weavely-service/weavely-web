@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>プライバシーポリシー | つぐもの</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #f7f5f1;
+    --line: #e4e0d8;
+    --ink: #29241c;
+    --ink-soft: #5c5646;
+    --ink-faint: #918a76;
+    --seal: #0f7b8a;
+    --link: #0b5f6b;
+    --flag-bg: #eef7f8;
+    --flag-border: #a9d3d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1b1712;
+      --bg-soft: #241f18;
+      --line: #3a3327;
+      --ink: #f0ece2;
+      --ink-soft: #c9c0ac;
+      --ink-faint: #8f8672;
+      --seal: #f2c14e;
+      --link: #f2c14e;
+      --flag-bg: #16282b;
+      --flag-border: #2f5a60;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1b1712;
+    --bg-soft: #241f18;
+    --line: #3a3327;
+    --ink: #f0ece2;
+    --ink-soft: #c9c0ac;
+    --ink-faint: #8f8672;
+    --seal: #f2c14e;
+    --link: #f2c14e;
+    --flag-bg: #16282b;
+    --flag-border: #2f5a60;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+    line-height: 1.85;
+  }
+  a { color: var(--link); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  nav.site { border-bottom: 1px solid var(--line); padding: 18px 0; }
+  nav.site .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .brand { display: flex; align-items: center; gap: 8px; font-family: "Shippori Mincho", serif; font-weight: 700; font-size: 18px; text-decoration: none; color: var(--ink); }
+  .brand-icon {
+    width: 22px; height: 22px; border-radius: 6px; flex: none;
+    background: var(--seal); color: #eef7f8; display: flex; align-items: center; justify-content: center;
+    font-family: "Shippori Mincho", serif; font-weight: 700; font-size: 12px;
+  }
+  .navlinks { display: flex; gap: 18px; font-size: 13px; flex-wrap: wrap; }
+  .navlinks a { text-decoration: none; color: var(--ink-soft); }
+  .navlinks a.current { color: var(--seal); font-weight: 700; }
+  .navlinks a:hover { color: var(--link); }
+
+  main { padding: 48px 0 80px; }
+  h1 { font-family: "Shippori Mincho", serif; font-size: 26px; margin: 0 0 6px; }
+  .updated { font-size: 13px; color: var(--ink-faint); margin-bottom: 36px; }
+
+  .fillin {
+    background: var(--flag-bg); border: 1px solid var(--flag-border); border-radius: 6px;
+    padding: 14px 18px; font-size: 13px; color: var(--ink-soft); margin-bottom: 36px;
+  }
+  .fillin b { color: var(--ink); }
+
+  h2 {
+    font-family: "Shippori Mincho", serif; font-size: 18px; margin: 34px 0 12px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  h2:first-of-type { margin-top: 0; }
+  p { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 14px; }
+  ol, ul { margin: 0 0 14px; padding-left: 22px; }
+  li { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 13.5px; }
+  th, td { text-align: left; padding: 8px 10px; border: 1px solid var(--line); color: var(--ink-soft); vertical-align: top; }
+  th { background: var(--bg-soft); color: var(--ink); font-weight: 700; width: 30%; }
+  mark.fill { background: var(--flag-bg); color: var(--seal); padding: 0 4px; border-radius: 3px; font-weight: 700; }
+
+  footer.site { border-top: 1px solid var(--line); padding: 28px 0; }
+  footer.site .wrap { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+  footer.site .links { display: flex; gap: 18px; font-size: 13px; flex-wrap: wrap; }
+  footer.site .links a { text-decoration: none; color: var(--ink-soft); }
+  footer.site .copyright { font-size: 12.5px; color: var(--ink-faint); }
+  h3 { font-size: 15px; margin: 22px 0 6px; }
+  .updated { margin-bottom: 28px; }
+</style></head>
+<body>
+<nav class="site"><div class="wrap">
+<a class="brand" href="index.html"><span class="brand-icon">つ</span>つぐもの</a>
+<div class="navlinks"><a href="index.html">つぐもの</a><a class="current" href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a><a href="support.html">サポート</a><a href="account-deletion.html">アカウントと個人情報の削除</a></div></div></nav>
+<main class="wrap">
+<h1>プライバシーポリシー</h1>
+<div class="updated">最終更新日: 2026年11月18日</div>
+<p>合同会社粋人舎(以下「当方」といいます)は、当方が提供するアプリケーション「つぐもの」(以下「本サービス」といいます)における、利用者の個人情報の取り扱いについて、以下のとおりプライバシーポリシー(以下「本ポリシー」といいます)を定めます。</p><h2>1. 取得する情報</h2>
+<p>本サービスは、利用者が本サービスを利用するにあたり、以下の情報を取得します。</p>
+<ul><li><b>アカウント情報</b> Sign in with AppleまたはGoogleログインによりサインインした際に発行される識別子。取得できた場合はメールアドレス。利用者が設定したニックネーム(物語のページ上には表示されません)。</li><li><b>投稿コンテンツ</b> 利用者が投稿したページの本文、サブタイトル、タイトル、ジャンル、およびページへの評価(1〜10)。</li><li><b>利用情報</b> 栞、「後で読む」の登録、ブロックした書き手の情報。</li><li><b>閲覧の記録</b> 閲覧したページの記録(統計のため)。サインインしていない場合は、端末ごとに発行されるランダムな識別子と紐づけて記録することがあります。</li><li><b>通報情報</b> 利用者がページを通報した際の通報内容。</li></ul>
+<h2>2. 利用目的</h2>
+<ul><li>本サービスの提供、維持、保護および改善のため</li><li>物語、ページ、評価、栞などの機能を、利用者に提供するため</li><li>閲覧状況などの統計の作成のため</li><li>不正利用、規約違反への対応、通報内容の確認・対応のため</li><li>お問い合わせへの対応のため</li></ul>
+<h2>3. 匿名性について</h2>
+<p>本サービスでは、物語のページ上に、投稿者のニックネームやアカウントの情報を表示しません。他の利用者に対して、投稿者を特定できる情報は公開されません。通報やブロックは、当方のサーバー内で、利用者を識別する内部の番号を用いて処理されます。</p>
+<h2>4. 第三者への提供・業務委託</h2>
+<p>当方は、以下のサービス提供者に対し、本サービスの運営に必要な範囲で情報を提供・委託することがあります。</p>
+<ul><li>Apple Inc. — Sign in with Apple(認証)</li><li>Google LLC — Googleログイン(認証)</li><li>Amazon Web Services, Inc. — サーバーおよびデータベースの運用(投稿コンテンツや利用者の情報の保管)</li></ul>
+<p>これらの提供先には、利用目的の達成に必要な範囲でのみ情報を提供し、目的外利用がないよう管理します。法令に基づく場合を除き、上記以外の第三者に個人情報を提供しません。</p>
+<h2>5. 情報の保存期間・退会時の取り扱い</h2>
+<p>利用者が退会した場合、以下の情報を消去または匿名化します。</p>
+<ul><li>メールアドレス、Apple・Googleのアカウント識別子の消去(以後、そのアカウントではサインインできません)</li><li>ニックネームの匿名化</li><li>栞と「後で読む」の削除</li></ul>
+<p>一方、投稿済みのページと、その評価は、他の利用者が続きを書いた物語の木を保つため、退会後も残ります。投稿者を特定できる情報は、上記のとおり消去されます。投稿済みのページの削除をご希望の場合は、アカウントと個人情報の削除のページに記載の方法でご依頼ください。法令等で保存が求められる情報は、定められた期間保存します。</p>
+<h2>6. 利用者の権利</h2>
+<p>利用者は、当方が保有する自己の個人情報について、開示・訂正・削除等を求めることができます。ご希望の場合は、下記のお問い合わせ先までご連絡ください。</p>
+<h2>7. 未成年の利用について</h2>
+<p>本サービスの利用にあたり、年齢による特段の制限は設けておりません。未成年の方が本サービスをご利用になる場合は、保護者の方の同意を得た上でご利用ください。</p>
+<h2>8. Cookie等の利用</h2>
+<p>本サービス(アプリケーション)では、広告目的のトラッキング、および他のアプリ・ウェブサイトをまたいだ追跡は行っていません。</p>
+<h2>9. 本ポリシーの変更</h2>
+<p>当方は、必要に応じて本ポリシーの内容を変更することがあります。変更後のプライバシーポリシーは、本ページに掲載した時点から効力を生じるものとします。重要な変更を行う場合は、本サービス内での通知等、適切な方法でお知らせします。</p>
+<h2>10. お問い合わせ</h2>
+<table><tr><th>運営者</th><td>合同会社粋人舎</td></tr><tr><th>お問い合わせ先</th><td>support@suijin-sha.com</td></tr></table>
+</main>
+<footer class="site"><div class="wrap"><div class="links"><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a><a href="support.html">サポート</a><a href="account-deletion.html">アカウントと個人情報の削除</a></div>
+<div class="copyright">&copy; 2026 合同会社粋人舎</div></div></footer>
+</body></html>
